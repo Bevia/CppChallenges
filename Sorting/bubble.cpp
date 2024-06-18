@@ -32,7 +32,17 @@ void bubbleSort(std::vector<int>& arr) {
         //The Bubble Sort algorithm works by repeatedly swapping adjacent elements if they are in the wrong order, gradually moving the larger elements towards the end of the array. It continues this process until the array is fully sorted. Although Bubble Sort is simple to understand, it is not the most efficient sorting algorithm, especially for large arrays, 
         if (!swapped)
             break;
-    }
+
+            //Note: The std::swap function is a utility function provided by the C++ Standard Library that exchanges the values of two objects. 
+            //It is defined in the <utility> header and can be used to swap the contents of two variables efficiently.
+            /*
+            template< class T >
+            void swap( T& a, T& b );
+            T: The type of the objects to be swapped.
+                a: A reference to the first object.
+                b: A reference to the second object.
+            */
+    }      
 }
 
 int main() {
