@@ -16,5 +16,5 @@
     g++ ./Advanced/MathematicsAndAlgorithms/SoA_Aos/SoA_vs_Aos.cpp ./Advanced/MathematicsAndAlgorithms/SoA_Aos/SoA_vs_Aos.cpp -o SoA_vs_Aos 
 ### To enable C++11, use the following command:
     g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/SoA_Aos/SoA_vs_Aos.cpp -o ./Advanced/MathematicsAndAlgorithms/SoA_Aos/SoA_vs_Aos -o SoA_vs_Aos 
-### To run the program, use this command:
+#### To run the program, use this command:
     ./SoA_vs_Aos
