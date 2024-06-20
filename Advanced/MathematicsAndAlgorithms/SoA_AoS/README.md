@@ -1,3 +1,6 @@
+## Theory
+    In C++, understanding the performance differences between the "Structure of Arrays" (SoA) and "Array of Structures" (AoS) can be critical for optimizing certain types of programs, especially those that involve large amounts of data processing
+
 ## Initialization:
     AoS: We create a vector of ParticleAoS structures and initialize each particle's position and velocity.
     SoA: We create a ParticlesSoA structure containing vectors for each coordinate and initialize them.
