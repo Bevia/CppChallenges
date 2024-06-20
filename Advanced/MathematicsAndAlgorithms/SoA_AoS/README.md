@@ -1,6 +1,6 @@
 Explanation
 
-    ## Initialization:
+    ##Initialization:
     AoS: We create a vector of ParticleAoS structures and initialize each particle's position and velocity.
     SoA: We create a ParticlesSoA structure containing vectors for each coordinate and initialize them.
 
