@@ -5,9 +5,9 @@
 using namespace std;
 
 //  to make it run:
-//  g++ ./Advanced/MathematicsAndAlgorithms/wavelet_transform.cpp ./Advanced/MathematicsAndAlgorithms/wavelet_transform.cpp -o wavelet_transform 
+//  g++ ./Advanced/MathematicsAndAlgorithms/WaveletTransform/wavelet_transform.cpp ./Advanced/MathematicsAndAlgorithms/WaveletTransform/wavelet_transform.cpp -o wavelet_transform 
 //  To enable C++11, use the following command:
-//  g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/wavelet_transform.cpp -o ./Advanced/MathematicsAndAlgorithms/wavelet_transform -o wavelet_transform 
+//  g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/WaveletTransform/wavelet_transform.cpp -o ./Advanced/MathematicsAndAlgorithms/WaveletTransform/wavelet_transform -o wavelet_transform 
 //  To run the program, use this command:
 //  ./wavelet_transform
 
