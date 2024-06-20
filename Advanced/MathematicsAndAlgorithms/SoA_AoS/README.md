@@ -8,7 +8,7 @@
 ### Timing:
     We use std::chrono::high_resolution_clock to measure the time taken to update all particles for both AoS and SoA.
 
-#### Output:
+### Output:
     Time taken by AoS: 0.00841062 seconds
     Time taken by SoA: 0.00835908 seconds    
 
