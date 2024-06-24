@@ -5,7 +5,6 @@ In C++, it is particularly useful for recursive functions that call themselves a
 TCO is the process of optimizing tail calls to avoid adding a new stack frame to the call stack. Instead of creating a new stack frame for the called function, the current function's stack frame is reused. This optimization is particularly important for recursive functions as it can convert the recursion into an iterative process, thereby preventing potential stack overflow and reducing memory usage.
 
 ### Benefits of TCO
-
     Reduced Memory Usage: By reusing the current function’s stack frame, TCO significantly reduces the amount of memory required for recursive calls.
     Preventing Stack Overflow: TCO helps in preventing stack overflow errors in deep recursion scenarios.
     Improved Performance: It reduces the overhead of function calls and can lead to better performance in terms of speed.
