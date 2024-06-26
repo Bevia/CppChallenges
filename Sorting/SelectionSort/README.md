@@ -16,6 +16,12 @@ Explanation
         Calls the selectionSort function to sort the array.
         Prints the sorted array.
 
+### Characteristics
+
+    Simple and easy to implement.
+    Works by repeatedly finding the minimum element and placing it at the beginning.
+    Time Complexity: O(n2)O(n2).
+
 This implementation is simple and utilizes modern C++ features like the std::vector container and std::swap function.
 
 ### to make it run:
