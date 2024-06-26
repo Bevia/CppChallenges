@@ -1,4 +1,4 @@
-## Explanation
+# Explanation
 
 ### WaveletTransform: 
 This function performs the Haar wavelet transform on the input vector data. 
