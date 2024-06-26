@@ -2,6 +2,9 @@
 Tail Call Optimization (TCO) is an optimization technique used by some compilers to improve the efficiency of recursive function calls. 
 In C++, it is particularly useful for recursive functions that call themselves as their last operation. 
 
+Tail call optimisation isn't in the C++ standard. Apparently, some compilers, including MS Visual Studio and GCC, do provide 
+tail call optimisation under certain circumstances (when optimisations are enabled, obviously).
+
 TCO is the process of optimizing tail calls to avoid adding a new stack frame to the call stack. Instead of creating a new stack frame for the called function, the current function's stack frame is reused. This optimization is particularly important for recursive functions as it can convert the recursion into an iterative process, thereby preventing potential stack overflow and reducing memory usage.
 
 ### Benefits of TCO
