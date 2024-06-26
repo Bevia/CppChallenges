@@ -2,9 +2,9 @@
 #include <vector>
 
 //  to make it run:
-//  g++ ./Sorting/bubble.cpp ./Sorting/bubble.cpp -o bubble 
+//  g++ ./Sorting/Bubble/bubble.cpp ./Sorting/Bubble/bubble.cpp -o bubble 
 //  To enable C++11, use the following command:
-//  g++ -std=c++11 ./Sorting/bubble.cpp -o ./Sorting/bubble -o bubble
+//  g++ -std=c++11 ./Sorting/Bubble/bubble.cpp -o ./Sorting/Bubble/bubble -o bubble
 //  To run the program, use this command:
 //  ./bubble
 
