@@ -17,3 +17,10 @@ Explanation
         Prints the sorted array.
 
 This implementation is simple and utilizes modern C++ features like the std::vector container and std::swap function.
+
+### to make it run:
+g++ ./Sorting/SelectionSort/selectionsort.cpp ./Sorting/SelectionSort/selectionsort.cpp -o selectionsort 
+### To enable C++11, use the following command:
+g++ -std=c++11 ./Sorting/SelectionSort/selectionsort.cpp -o ./Sorting/SelectionSort/selectionsort -o selectionsort
+### To run the program, use this command:
+./selectionsort
