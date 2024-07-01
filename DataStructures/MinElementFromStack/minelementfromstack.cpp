@@ -2,7 +2,7 @@
 #include <stack>
 #include <stdexcept>
 
-class MinElelemtFromStack {
+class MinElementFromStack {
 public:
     void push(int value) {
         mainStack.push(value);
@@ -41,7 +41,9 @@ private:
 };
 
 int main() {
-    MinElelemtFromStack stack;
+   
+    MinElementFromStack stack;
+
     stack.push(3);
     stack.push(5);
     std::cout << "Minimum element: " << stack.getMin() << std::endl;
