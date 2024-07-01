@@ -2,13 +2,6 @@
 #include <vector>
 #include <algorithm> // for std::swap
 
-//  to make it run:
-//  g++ ./Sorting/SelectionSort/selectionsort.cpp ./Sorting/SelectionSort/selectionsort.cpp -o selectionsort 
-//  To enable C++11, use the following command:
-//  g++ -std=c++11 ./Sorting/SelectionSort/selectionsort.cpp -o ./Sorting/SelectionSort/selectionsort -o selectionsort
-//  To run the program, use this command:
-//  ./selectionsort
-
 void selectionSort(std::vector<int>& arr) {
     int n = arr.size();
     for (int i = 0; i < n - 1; ++i) {

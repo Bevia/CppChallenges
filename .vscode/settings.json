@@ -45,6 +45,7 @@
         "__split_buffer": "cpp",
         "array": "cpp",
         "charconv": "cpp",
-        "optional": "cpp"
+        "optional": "cpp",
+        "stack": "cpp"
     }
 }
