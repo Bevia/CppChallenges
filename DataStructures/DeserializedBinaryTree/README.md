@@ -12,6 +12,74 @@ Deserialization
 
 Deserialization involves reconstructing the binary tree from the string representation.
 
+      1
+     / \
+    2   3
+       / \
+      4   5
+
+Pre-order Traversal
+
+In pre-order traversal, we visit nodes in the order: root, left subtree, right subtree.
+Step-by-Step Serialization
+
+    Visit Root (1)
+        Append 1 to the result.
+        Serialized string so far: 1
+
+    Visit Left Subtree of Root (1)
+        Root of left subtree is 2.
+        Append 2 to the result.
+        Serialized string so far: 1 2
+
+    Visit Left Subtree of Node (2)
+        Left child of 2 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 #
+
+    Visit Right Subtree of Node (2)
+        Right child of 2 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 # #
+
+    Visit Right Subtree of Root (1)
+        Root of right subtree is 3.
+        Append 3 to the result.
+        Serialized string so far: 1 2 # # 3
+
+    Visit Left Subtree of Node (3)
+        Root of left subtree is 4.
+        Append 4 to the result.
+        Serialized string so far: 1 2 # # 3 4
+
+    Visit Left Subtree of Node (4)
+        Left child of 4 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 # # 3 4 #
+
+    Visit Right Subtree of Node (4)
+        Right child of 4 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 # # 3 4 # #
+
+    Visit Right Subtree of Node (3)
+        Root of right subtree is 5.
+        Append 5 to the result.
+        Serialized string so far: 1 2 # # 3 4 # # 5
+
+    Visit Left Subtree of Node (5)
+        Left child of 5 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 # # 3 4 # # 5 #
+
+    Visit Right Subtree of Node (5)
+        Right child of 5 is null.
+        Append # to represent null.
+        Serialized string so far: 1 2 # # 3 4 # # 5 # #
+
+Serialized Tree: 1 2 # # 3 4 # # 5 # # 
+Deserialized Tree: 1 2 # # 3 4 # # 5 # # 
+
 ## Explanation
 TreeNode Structure: The TreeNode struct represents a node in the binary tree with a value (val), and pointers to the left and right children.
 
