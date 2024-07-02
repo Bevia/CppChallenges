@@ -10,7 +10,7 @@ Serialization involves converting the binary tree into a string representation. 
 let's use a pre-order traversal (root-left-right) and represent null nodes with a special character (e.g., "#").
 Deserialization
 
-Deserialization involves reconstructing the binary tree from the string representation.
+## Deserialization involves reconstructing the binary tree from the string representation.
 
       1
      / \
@@ -20,6 +20,10 @@ Deserialization involves reconstructing the binary tree from the string represen
 
 Pre-order Traversal
 
+Serialized Tree: 1 2 # # 3 4 # # 5 # # 
+Deserialized Tree: 1 2 # # 3 4 # # 5 # # 
+
+### Detailed explanation:
 In pre-order traversal, we visit nodes in the order: root, left subtree, right subtree.
 Step-by-Step Serialization
 
@@ -76,9 +80,6 @@ Step-by-Step Serialization
         Right child of 5 is null.
         Append # to represent null.
         Serialized string so far: 1 2 # # 3 4 # # 5 # #
-
-Serialized Tree: 1 2 # # 3 4 # # 5 # # 
-Deserialized Tree: 1 2 # # 3 4 # # 5 # # 
 
 ## Explanation
 TreeNode Structure: The TreeNode struct represents a node in the binary tree with a value (val), and pointers to the left and right children.
