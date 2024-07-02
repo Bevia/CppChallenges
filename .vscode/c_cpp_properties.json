@@ -4,8 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/include",
-                "/usr/include"
+                "/opt/homebrew/Cellar/fftw/3.3.10_1/lib",
+                "/opt/homebrew/Cellar/fftw/3.3.10_1/include"
             ],
             "defines": [],
             "macFrameworkPath": [
