@@ -46,6 +46,7 @@
         "array": "cpp",
         "charconv": "cpp",
         "optional": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "queue": "cpp"
     }
 }
