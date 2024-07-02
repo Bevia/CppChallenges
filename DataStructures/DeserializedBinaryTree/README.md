@@ -1,4 +1,5 @@
-## serialized and deserialized a binary tree
+
+## Serialized and deserialized a binary tree
 
 Serialization and deserialization of a binary tree in modern C++ can be accomplished using various techniques. 
 One common approach is to use a pre-order traversal for serialization and to reconstruct the tree using a queue during deserialization. 
@@ -11,7 +12,7 @@ Deserialization
 
 Deserialization involves reconstructing the binary tree from the string representation.
 
-## Explanation
+## Explanation
 TreeNode Structure: The TreeNode struct represents a node in the binary tree with a value (val), and pointers to the left and right children.
 
 ### Serialize Function:
@@ -19,7 +20,7 @@ Uses a lambda function serializeHelper to recursively traverse the tree in pre-o
 If a node is null, it appends "# " to the output stream.
 Otherwise, it appends the node's value followed by a space and recursively processes the left and right children.
 
-### Deserialize Function:
+## Deserialize Function:
 Reads the serialized string into a queue of strings, each representing a node.
 Uses a lambda function deserializeHelper to reconstruct the tree:
 If the queue is empty, it returns nullptr.
