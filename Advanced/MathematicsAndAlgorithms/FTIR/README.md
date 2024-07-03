@@ -100,5 +100,5 @@ In summary, an interferogram is a crucial intermediate step in FTIR spectrometry
 #### To run the program, use this command:
     ./ftir
 
-
+### compile the FTTW3 library...find the route of the lib and do the following:
 g++ -o ftir ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -lfftw3 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include
