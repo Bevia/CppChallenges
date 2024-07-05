@@ -11,3 +11,10 @@ In C++, the std::mutex class represents a mutex.
 Locks
 
 A lock is a mechanism that is used to acquire and release the mutex. The lock is responsible for managing the state of the mutex, ensuring that the mutex is acquired when a thread enters the critical section and released when the thread leaves the critical section. In modern C++, the standard library provides classes such as std::lock_guard and std::unique_lock to manage mutexes.
+
+### to make it run:
+g++ ./Multithreading/Mutexes/mutex.cpp ./Multithreading/Mutexes/mutex.cpp -o mutex 
+### To enable C++11, use the following command:
+g++ -std=c++11 ./Multithreading/Mutexes/mutex.cpp -o ./Multithreading/Mutexes/mutex.cpp -o mutex
+### To run the program, use this command:
+./mutex
