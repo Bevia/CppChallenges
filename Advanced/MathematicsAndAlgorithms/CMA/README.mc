@@ -1,4 +1,10 @@
-Implementing a custom memory allocator in C++ involves creating a system that manages memory allocation and deallocation according to specific requirements. A simple example can involve creating a fixed-size block allocator. This kind of allocator can be useful when you need to allocate many small objects of the same size frequently.
+## Custom Mememory Allocaror 
+
+### Theory
+
+Implementing a custom memory allocator in C++ involves creating a system that manages memory allocation and deallocation 
+according to specific requirements. A simple example can involve creating a fixed-size block allocator. 
+This kind of allocator can be useful when you need to allocate many small objects of the same size frequently.
 
 Here is a simple example of a custom memory allocator in modern C++:
 Custom Memory Allocator
@@ -36,8 +42,8 @@ or integrating with standard C++ containers. However, for educational purposes, 
 of how custom memory allocation works.
 
 ## How to run:
-    g++ ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ftir 
+    g++ ./Advanced/MathematicsAndAlgorithms/CMA/cma.cpp ./Advanced/MathematicsAndAlgorithms/CMA/cma.cpp -o cma 
 ### To enable C++11, use the following command:
-    g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ftir 
+    g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/CMA/cma.cpp -o ./Advanced/MathematicsAndAlgorithms/CMA/cma.cpp -o cma 
 #### To run the program, use this command:
-    ./ftir
+    ./cma
