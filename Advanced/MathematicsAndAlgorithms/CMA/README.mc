@@ -34,3 +34,10 @@ Custom Memory Allocator
 This simple allocator can be extended to include more features, such as handling variable-sized blocks, memory pooling, 
 or integrating with standard C++ containers. However, for educational purposes, this example provides a basic understanding 
 of how custom memory allocation works.
+
+## How to run:
+    g++ ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ftir 
+### To enable C++11, use the following command:
+    g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ./Advanced/MathematicsAndAlgorithms/FTIR/ftir.cpp -o ftir 
+#### To run the program, use this command:
+    ./ftir
