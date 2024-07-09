@@ -5,3 +5,8 @@ Welcome to "C++ Exercise Challenges," a comprehensive guide designed to sharpen 
 Each chapter is structured to introduce a specific topic, provide detailed explanations, and present a series of progressively difficult exercises. These challenges are crafted to test your knowledge, encourage creative thinking, and promote best practices in coding. Whether you are preparing for coding interviews, looking to boost your coursework, or simply aiming to become a more proficient programmer, this book offers the tools and insights you need to succeed.
 
 Embark on this journey to master C++ and transform your coding skills through engaging and thought-provoking exercises. Let's dive in and start solving!
+
+
+## Acknowledgments
+
+I would like to express my deepest gratitude to Vicente Bevia, whose invaluable feedback and support were instrumental in shaping this C++ exercise challenge repository.
