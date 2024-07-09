@@ -9,4 +9,4 @@ Embark on this journey to master C++ and transform your coding skills through en
 
 ## Acknowledgments
 
-I would like to express my deepest gratitude to Vicente Bevia, whose invaluable feedback and support were instrumental in shaping this C++ exercise challenge repository.
+I would like to express my deepest gratitude to Vicente Bevia https://github.com/VicenteB97, whose invaluable feedback and support were instrumental in shaping this C++ exercise challenge repository.
