@@ -55,6 +55,7 @@ int main() {
     
     std::cout << "Minimum cost to reach bottom-right corner: " << minCost << std::endl;
     
+    //Write the DP table to a file and use the dp_table_visualizer.py script to visualize it
     writeDPTableToFile(dp, "dp_table.txt");
     
     return 0;
