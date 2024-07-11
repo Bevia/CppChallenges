@@ -22,3 +22,9 @@ the minimum cost path from the top-left corner to the bottom-right corner, movin
 
 This solution ensures that we find the minimum cost path efficiently using a dynamic programming approach.
 
+## How to run:
+    g++ ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o minimumcost 
+### To enable C++11, use the following command:
+    g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o minimumcost 
+#### To run the program, use this command:
+    ./minimumcost
