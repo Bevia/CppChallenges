@@ -1,11 +1,10 @@
 ## Main purpose
 
-The example uses a dynamic programming approach to solve the problem. 
+### The example uses a dynamic programming approach to solve the minimun cost path problem. 
 Given a grid where each cell has a cost associated with it, the goal is to find 
 the minimum cost path from the top-left corner to the bottom-right corner, moving only right or down.
 
 ## Theory
-
 
 ### Initialization:
         The 2D vector dp is used to store the minimum cost to reach each cell.
