@@ -18,10 +18,15 @@ int minCostPath(const std::vector<std::vector<int>>& cost, std::vector<std::vect
         dp[0][j] = dp[0][j-1] + cost[0][j];
     }
     
+    // Fill the dp table (or grid)
     for (int i = 1; i < rows; ++i) {
         for (int j = 1; j < cols; ++j) {
+            //Minimum cost to reach cell (i, j) is the minimum of the costs of the cells above and to the left of it.
+            //For each cell (i, j), the minimum cost to reach this cell (dp[i][j]) is computed using the following relation:
             dp[i][j] = std::min(dp[i-1][j], dp[i][j-1]) + cost[i][j];
         }
+        //the code efficiently computes the minimum cost path in a grid using dynamic programming, 
+        //leveraging previously computed results to build up solutions for larger subproblems until reaching the desired endpoint (rows-1, cols-1).
     }
     
     return dp[rows-1][cols-1];
