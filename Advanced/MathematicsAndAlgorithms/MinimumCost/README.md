@@ -36,7 +36,7 @@ This solution ensures that we find the minimum cost path efficiently using a dyn
     python3 -m pip install matplotlib numpy
 
     then do the following:
-        python3 ./Advanced/MathematicsAndAlgorithms/MinimumCost/dp_table_visualizer.py
+    python3 ./Advanced/MathematicsAndAlgorithms/MinimumCost/dp_table_visualizer.py
 
 if all goes well you will get the table / matrix
 
