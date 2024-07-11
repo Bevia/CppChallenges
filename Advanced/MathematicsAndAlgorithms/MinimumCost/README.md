@@ -40,6 +40,7 @@ This solution ensures that we find the minimum cost path efficiently using a dyn
 
 if all goes well you will get the table / matrix
 
+<img width="668" alt="Screenshot 2024-07-11 at 15 15 08" src="https://github.com/Bevia/CppChallenges/assets/1615724/c1cc158d-7bf5-4e1b-a249-e1aaec987bdb">
 
 
 
