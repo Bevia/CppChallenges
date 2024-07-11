@@ -25,5 +25,21 @@ This solution ensures that we find the minimum cost path efficiently using a dyn
     g++ ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o minimumcost 
 ### To enable C++11, use the following command:
     g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o ./Advanced/MathematicsAndAlgorithms/MinimumCost/minimumcost.cpp -o minimumcost 
+    g++ -std=c++11 ./Advanced/MathematicsAndAlgorithms/MinimumCost/mincost_visualre_presentation.cpp -o ./Advanced/MathematicsAndAlgorithms/MinimumCost/mincost_visualre_presentation.cpp -o mincost_visualre_presentation 
 #### To run the program, use this command:
     ./minimumcost
+    ./mincost_visualre_presentation
+
+## To run python 
+    make sure you have python install + matplotlib
+    to install matplotlib:
+    python3 -m pip install matplotlib numpy
+
+    then do the following:
+        python3 ./Advanced/MathematicsAndAlgorithms/MinimumCost/dp_table_visualizer.py
+
+if all goes well you will get the table / matrix
+
+
+
+
