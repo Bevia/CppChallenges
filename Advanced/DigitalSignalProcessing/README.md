@@ -6,9 +6,11 @@
     ./fir
 
 ### compile the FTTW3 library...find the route of the lib and do the following:
-g++ -std=c++11 -o fir ./Advanced/DigitalSignalProcessing/fir.cpp -lfftw3 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include
+g++ -std=c++11 -o fir ./Advanced/DigitalSignalProcessing/fir.cpp -lfftw3 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include/
 
-g++ -std=c++11 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include -lfftw3 -lm -o fir ./Advanced/DigitalSignalProcessing/fir.cpp
+g++ -std=c++11 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include/ -lfftw3 -lm -o fir ./Advanced/DigitalSignalProcessing/fir.cpp
+
+/opt/homebrew/Cellar/fftw/3.3.10_1/include
 
 
 python3 ./Advanced/DigitalSignalProcessing/plat_response.py
