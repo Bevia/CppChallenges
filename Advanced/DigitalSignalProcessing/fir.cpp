@@ -3,6 +3,7 @@
 #include <cmath>
 #include <fftw3.h>
 #include <fstream>
+#include <cstdlib>   // for std::system
 
 using namespace std;
 
@@ -41,10 +42,15 @@ int main() {
 
     // Write impulse response to a file
     ofstream impulse_file("impulse_response.txt");
-    for (size_t i = 0; i < h.size(); ++i) {
-        impulse_file << h[i] << endl;
+    if (impulse_file.is_open()) {
+        for (size_t i = 0; i < h.size(); ++i) {
+            impulse_file << h[i] << endl;
+        }
+        impulse_file.close();
+    } else {
+        cerr << "Error: Unable to open impulse_response.txt for writing." << endl;
+        return 1;
     }
-    impulse_file.close();
 
     // Compute frequency response using FFTW
     int fft_size = 1024;
@@ -73,10 +79,15 @@ int main() {
 
     // Write frequency response to a file
     ofstream freq_file("frequency_response.txt");
-    for (size_t i = 0; i < magnitude.size(); ++i) {
-        freq_file << magnitude[i] << endl;
+    if (freq_file.is_open()) {
+        for (size_t i = 0; i < magnitude.size(); ++i) {
+            freq_file << magnitude[i] << endl;
+        }
+        freq_file.close();
+    } else {
+        cerr << "Error: Unable to open frequency_response.txt for writing." << endl;
+        return 1;
     }
-    freq_file.close();
 
     // Clean up FFTW
     fftw_destroy_plan(p);

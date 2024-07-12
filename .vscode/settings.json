@@ -47,6 +47,12 @@
         "charconv": "cpp",
         "optional": "cpp",
         "stack": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "__hash_table": "cpp",
+        "__node_handle": "cpp",
+        "deque": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "unordered_map": "cpp"
     }
 }
