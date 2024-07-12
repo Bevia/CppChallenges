@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <fftw3.h>
+#include <fstream>
 
 using namespace std;
 
@@ -38,11 +39,12 @@ int main() {
         h[n] = h_d[n] * w[n];
     }
 
-    // Display impulse response
-    cout << "Impulse Response:\n";
-    for (const auto& coef : h) {
-        cout << coef << endl;
+    // Write impulse response to a file
+    ofstream impulse_file("impulse_response.txt");
+    for (size_t i = 0; i < h.size(); ++i) {
+        impulse_file << h[i] << endl;
     }
+    impulse_file.close();
 
     // Compute frequency response using FFTW
     int fft_size = 1024;
@@ -69,11 +71,12 @@ int main() {
         magnitude[i] = 20 * log10(sqrt(out[i][0] * out[i][0] + out[i][1] * out[i][1]));
     }
 
-    // Display frequency response
-    cout << "Frequency Response (dB):\n";
-    for (const auto& mag : magnitude) {
-        cout << mag << endl;
+    // Write frequency response to a file
+    ofstream freq_file("frequency_response.txt");
+    for (size_t i = 0; i < magnitude.size(); ++i) {
+        freq_file << magnitude[i] << endl;
     }
+    freq_file.close();
 
     // Clean up FFTW
     fftw_destroy_plan(p);
