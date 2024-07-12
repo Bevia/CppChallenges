@@ -10,6 +10,7 @@ g++ -std=c++11 -o fir ./Advanced/DigitalSignalProcessing/fir.cpp -lfftw3 -L/opt/
 
 g++ -std=c++11 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include -lfftw3 -lm -o fir ./Advanced/DigitalSignalProcessing/fir.cpp
 
+### my path to fftw
 /opt/homebrew/Cellar/fftw/3.3.10_1/include
 
 ### path to python:
