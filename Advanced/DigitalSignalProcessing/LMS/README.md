@@ -21,7 +21,41 @@ brew install python
 python3 ./Advanced/DigitalSignalProcessing/LMS/lms_plot.py
 
 ## About Least Mean Square
-Explanation:
+
+How LMS Works in DSP
+
+The LMS algorithm adjusts the coefficients of an adaptive filter to minimize the mean square error between the desired signal and the filter output. The main steps of the LMS algorithm are:
+
+    Initialize the filter coefficients to small random values or zeros.
+    For each input sample:
+        Compute the filter output by taking the dot product of the input vector and the filter coefficients.
+        Calculate the error as the difference between the desired signal and the filter output.
+        Update the filter coefficients using the error and the input vector.
+
+The coefficient update formula is given by:
+w(n+1)=w(n)+2μe(n)x(n)w(n+1)=w(n)+2μe(n)x(n)
+where:
+
+    w(n)w(n) is the vector of filter coefficients at iteration nn.
+    μμ is the step size (learning rate).
+    e(n)e(n) is the error between the desired signal and the filter output at iteration nn.
+    x(n)x(n) is the input vector at iteration nn.
+
+Advantages of LMS
+
+    Simplicity: The LMS algorithm is simple to implement and requires minimal computational resources.
+    Adaptiveness: It can adapt to changing signal conditions in real-time, making it suitable for dynamic environments.
+    Robustness: LMS algorithms are robust to variations in the signal statistics and can perform well in various applications.
+
+Limitations of LMS
+
+    Convergence Speed: The convergence speed of the LMS algorithm can be slow, especially for small step sizes.
+    Steady-State Error: There may be a residual error in the steady state due to the noise in the error signal.
+    Sensitivity to Step Size: The performance of the LMS algorithm is highly dependent on the choice of the step size. A large step size can lead to instability, while a small step size can result in slow convergence.
+
+Conclusion
+
+The LMS algorithm is a fundamental tool in DSP with a wide range of applications, particularly in adaptive filtering. Its simplicity and effectiveness make it a popular choice for real-time signal processing tasks, despite some limitations in convergence speed and sensitivity to parameter settings.
 
 ### dotProduct: 
 A helper function to calculate the dot product of two vectors.
