@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Creating a DataFrame
 data = {
@@ -30,3 +31,23 @@ df.to_csv('people.csv', index=False)
 df_from_csv = pd.read_csv('people.csv')
 print("\nDataFrame read from 'people.csv':")
 print(df_from_csv)
+
+# Plotting the results
+plt.figure(figsize=(10, 6))
+
+# Bar plot for Age
+plt.subplot(2, 1, 1)
+plt.bar(df['Name'], df['Age'], color='skyblue')
+plt.title('Age of Individuals')
+plt.xlabel('Name')
+plt.ylabel('Age')
+
+# Bar plot for Salary
+plt.subplot(2, 1, 2)
+plt.bar(df['Name'], df['Salary'], color='lightgreen')
+plt.title('Salary of Individuals')
+plt.xlabel('Name')
+plt.ylabel('Salary')
+
+plt.tight_layout()
+plt.show()
