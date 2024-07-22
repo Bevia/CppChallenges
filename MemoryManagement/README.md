@@ -1,7 +1,7 @@
 ## Memory Management
 
-Smart pointers in modern C++ are a powerful tool for managing 
-the lifetime and ownership of dynamically allocated objects. 
+**Smart Pointers**:
+Smart pointers in modern C++ are a powerful tool for managing the lifetime and ownership of dynamically allocated objects. 
 The C++11 standard introduced three types of smart pointers: 
 std::unique_ptr, 
 std::shared_ptr, 
