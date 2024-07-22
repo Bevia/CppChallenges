@@ -1,7 +1,7 @@
 ## How to run:
     g++ ./Advanced/DigitalSignalProcessing/LMS/lms.cpp ./Advanced/DigitalSignalProcessing/LMS/lms.cpp -o lms 
 ### To enable C++11, use the following command:
-    g++ -std=c++11 ./Advanced/DigitalSignalProcessing/LMS/lms.cpp ./Advanced/DigitalSignalProcessing/LMS/lms.cpp -o lms
+    g++ -std=c++11 ./Advanced/DigitalSignalProcessing/LMS/lms.cpp -o ./Advanced/DigitalSignalProcessing/LMS/lms.cpp -o lms
 #### To run the program, use this command:
     ./lms
 
@@ -9,4 +9,13 @@
 /opt/homebrew/Cellar/fftw/3.3.10_1/include
 
 ### path to python:
+#### about pandas:
+https://github.com/pandas-dev/pandas
+https://pandas.pydata.org/docs/
+Installing pandas:
+pip install pandas
+or
+brew install python
+
+#### Running plotting file:
 python3 ./Advanced/DigitalSignalProcessing/LMS/lms_plot.py
