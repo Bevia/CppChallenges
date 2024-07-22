@@ -20,6 +20,9 @@ brew install python
 #### Running plotting file:
 python3 ./Advanced/DigitalSignalProcessing/LMS/lms_plot.py
 
+### Running pandas example
+python3 ./Advanced/DigitalSignalProcessing/LMS/pandas_example.py
+
 ## About Least Mean Square
 
 How LMS Works in DSP
