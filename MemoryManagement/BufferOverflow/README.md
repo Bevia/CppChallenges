@@ -4,9 +4,9 @@
     g++ ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp -o bufferoverflowhandeling 
 
 ### To enable C++11, use the following command:
-    g++ -std=c++11 ./MemoryManagement/BufferOverflow/bufferoverflow.cpp ./MemoryManagement/BufferOverflow/bufferoverflow.cpp -o bufferoverflow
+    g++ -std=c++11 ./MemoryManagement/BufferOverflow/bufferoverflow.cpp -o ./MemoryManagement/BufferOverflow/bufferoverflow.cpp -o bufferoverflow
 
-    g++ -std=c++11 ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp -o bufferoverflowhandeling
+    g++ -std=c++11 ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp -o ./MemoryManagement/BufferOverflow/bufferoverflowhandeling.cpp -o bufferoverflowhandeling
 
 #### To run the program, use this command:
     ./bufferoverflow
