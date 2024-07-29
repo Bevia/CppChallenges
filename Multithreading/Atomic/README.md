@@ -1,5 +1,9 @@
 ## Explanation for the atomicoperations.cpp code file
 
+In the main function, two threads (t1 and t2) are created. Both threads execute the increment_counter function concurrently.
+t1.join() and t2.join() ensure that the main function waits for both threads to finish their execution before proceeding.
+Finally, the value of counter is printed to the console.
+
 Atomic Variable: The variable counter is declared as std::atomic<int>, making all its operations atomic. This means operations on counter are performed without being interrupted by other threads, preventing data races.
 
 Increment Function: The increment_counter function contains a loop that increments the counter variable 1000 times. The fetch_add method is used to perform the increment operation atomically.
