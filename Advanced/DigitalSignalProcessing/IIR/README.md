@@ -5,6 +5,9 @@
 #### To run the program, use this command:
     ./iir
 
+### compile the FTTW3 library...find the route of the lib and do the following:
+g++ -std=c++11 -o iir ./Advanced/DigitalSignalProcessing/IIR/iir.cpp -lfftw3 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include/
+
 ## Theory
 
 adaptive IIR equalizer using the Least Mean Squares (LMS) algorithm implemented in modern C++. This example demonstrates how to adapt the coefficients of an IIR filter to equalize a signal distorted by a channel.

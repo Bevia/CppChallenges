@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <cmath>
 
@@ -65,13 +66,16 @@ int main() {
     AdaptiveIIRFilter filter(order, mu);
 
     // Simulated received signal and desired signal
-    std::vector<double> received_signal = { /* your signal data here */ };
-    std::vector<double> reference_signal = { /* your reference signal data here */ };
+    std::vector<double> received_signal = { 1.0, 0.5, -0.3, 0.8, 0.0, -0.7, 1.2, 0.3, -0.4, 0.5 };
+    std::vector<double> reference_signal = { 1.1, 0.6, -0.2, 0.7, 0.1, -0.6, 1.3, 0.2, -0.3, 0.6 };
 
     if (received_signal.size() != reference_signal.size()) {
         std::cerr << "Error: Signals must be of the same length." << std::endl;
         return 1;
     }
+
+    // Open a file to write the results
+    std::ofstream outfile("output.txt");
 
     // Process and adapt the filter
     for (size_t i = 0; i < received_signal.size(); ++i) {
@@ -87,9 +91,12 @@ int main() {
         // Adapt the filter coefficients
         filter.adapt(error);
 
-        // Output the result (or use it in further processing)
-        std::cout << "Input: " << input << ", Output: " << output << ", Error: " << error << std::endl;
+        // Write the result to the file
+        outfile << input << " " << output << " " << error << std::endl;
     }
+
+    // Close the file
+    outfile.close();
 
     return 0;
 }
