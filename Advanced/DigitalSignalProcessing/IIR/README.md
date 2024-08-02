@@ -1,3 +1,10 @@
+## How to run:
+    g++ ./Advanced/DigitalSignalProcessing/IIR/iir.cpp ./Advanced/DigitalSignalProcessing/IIR/iir.cpp -o iir 
+### To enable C++11, use the following command:
+    g++ -std=c++11 ./Advanced/DigitalSignalProcessing/IIR/iir.cpp -o ./Advanced/DigitalSignalProcessing/IIR/iir.cpp -o iir 
+#### To run the program, use this command:
+    ./iir
+
 ## Theory
 
 adaptive IIR equalizer using the Least Mean Squares (LMS) algorithm implemented in modern C++. This example demonstrates how to adapt the coefficients of an IIR filter to equalize a signal distorted by a channel.
