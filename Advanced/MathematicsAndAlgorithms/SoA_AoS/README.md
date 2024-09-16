@@ -1,4 +1,4 @@
-## Theory
+## Structure of Arrays" (SoA) and "Array of Structures Theory
     In C++, understanding the performance differences between the "Structure of Arrays" (SoA) and "Array of Structures" (AoS) can be critical for optimizing certain types of programs, especially those that involve large amounts of data processing
 
     Understanding the performance differences between "Structure of Arrays" (SoA) and "Array of Structures" (AoS) is crucial because it directly impacts the efficiency and speed of memory access and data processing in computer programs, especially in performance-critical applications such as simulations, graphics rendering, and scientific computing. Here are several key reasons why this understanding is important:
