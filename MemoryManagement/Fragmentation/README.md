@@ -8,7 +8,7 @@
 
 In memory management, fragmentation can occur when free memory is broken into small, non-contiguous blocks over time, making it difficult to allocate large contiguous memory blocks even if the total free memory is sufficient.
 
-### Explanation
+### Fragmentation Theory
 
 Allocate Blocks: We first allocate three blocks of memory of different sizes (10, 20, and 30 integers).
 
