@@ -55,7 +55,7 @@ void bubbleSort(std::vector<int>& arr) { //Takes a reference to a std::vector<in
                 b: A reference to the second object.
             */
     }      
-}
+
 int main() {
     // Initialize a vector with unsorted integers
     std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
