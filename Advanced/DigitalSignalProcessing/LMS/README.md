@@ -23,7 +23,7 @@ python3 ./Advanced/DigitalSignalProcessing/LMS/lms_plot.py
 ### Running pandas example
 python3 ./Advanced/DigitalSignalProcessing/LMS/pandas_example.py
 
-## About Least Mean Square
+## Least Mean Square Theory
 
 How LMS Works in DSP
 
