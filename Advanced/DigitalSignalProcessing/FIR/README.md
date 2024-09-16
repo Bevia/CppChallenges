@@ -21,8 +21,7 @@ python3 ./Advanced/DigitalSignalProcessing/FIR/fir_response.py
  g++ -std=c++11 ./Advanced/DigitalSignalProcessing/FIR/read_python_script.cpp -o ./Advanced/DigitalSignalProcessing/FIR/read_python_script.cpp -o testing 
  ./testing
 
- ## Theory
-
+ ## Finite Impulse Response (FIR) Filter Theory
 Digital Signal Processing (DSP) Finite Impulse Response (FIR) filters are a type of digital filter used to manipulate or modify signals in various ways, such as removing noise, shaping signals, or extracting useful information from them. FIR filters have a finite duration of response to an impulse input, meaning they settle to zero in a finite amount of time.
 
 ### Key Characteristics:
