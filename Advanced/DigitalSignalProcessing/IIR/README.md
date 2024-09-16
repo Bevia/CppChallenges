@@ -5,6 +5,10 @@
 #### To run the program, use this command:
     ./iir
 
+### to plot IIR with python file
+python3 ./Advanced/DigitalSignalProcessing/IIR/plot_iir.py
+
+
 ### compile the FTTW3 library...find the route of the lib and do the following:
 g++ -std=c++11 -o iir ./Advanced/DigitalSignalProcessing/IIR/iir.cpp -lfftw3 -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib/ -I/opt/homebrew/Cellar/fftw/3.3.10_1/include/
 

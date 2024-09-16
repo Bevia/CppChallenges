@@ -1,3 +1,4 @@
+## Fourier-Transform Infrared Spectrometry (FTIR)
 Fourier-Transform Infrared Spectrometry (FTIR) is an analytical technique used to identify organic, polymeric, and, in some cases, inorganic materials. It operates by measuring how a sample absorbs infrared (IR) radiation at different wavelengths. The key components and principles of FTIR include:
 
 ### Components of an FTIR Spectrometer:
