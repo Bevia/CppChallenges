@@ -1,6 +1,4 @@
-## Custom Mememory Allocaror 
-
-### Theory
+## Custom Mememory Allocaror Theory
 
 Implementing a custom memory allocator in C++ involves creating a system that manages memory allocation and deallocation 
 according to specific requirements. A simple example can involve creating a fixed-size block allocator. 
