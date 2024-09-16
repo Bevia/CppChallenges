@@ -1,4 +1,4 @@
-## Theory
+## Tail Call Optimization (TCO) Theory
 Tail Call Optimization (TCO) is an optimization technique used by some compilers to improve the efficiency of recursive function calls. 
 In C++, it is particularly useful for recursive functions that call themselves as their last operation. 
 
