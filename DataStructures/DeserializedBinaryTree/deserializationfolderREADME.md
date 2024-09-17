@@ -1,3 +1,5 @@
+## How Serialization and Deserialization works
+
 Root
 ├── Folder1
 │   ├── File1.txt
@@ -5,7 +7,7 @@ Root
 │       └── File2.txt
 └── File3.txt
 
-n this example:
+in this example:
 
 	•	The root node represents the root directory of the file system.
 	•	Folder1 is a subdirectory under the root.
@@ -13,6 +15,63 @@ n this example:
 	•	Folder2 is a subdirectory within Folder1.
 	•	File2.txt is a file in Folder2.
 	•	File3.txt is a file directly under the root.
+
+Root (Node)
+├── Folder1 (Node)
+│   ├── File1.txt (Leaf Node)
+│   └── Folder2 (Node)
+│       └── File2.txt (Leaf Node)
+└── File3.txt (Leaf Node)
+
+       Root
+      /    \
+ Folder1  File3.txt
+   /  \
+File1.txt Folder2
+            \
+          File2.txt
+
+        1 (Root)
+     /     \
+  2 (Folder1)  5 (File3.txt)
+   /  \
+ 3 (File1.txt) 4 (Folder2)
+                \
+              6 (File2.txt)
+
+              Got it! Here's how the file system structure you provided would look in the same format as a tree with numbered nodes:
+
+```
+       Root
+      /    \
+ Folder1  File3.txt
+   /  \
+File1.txt Folder2
+            \
+          File2.txt
+```
+
+In a more structured way, using the number-based format like in your example:
+
+```
+      1 (Root)
+     /     \
+  2 (Folder1)  5 (File3.txt)
+   /  \
+ 3 (File1.txt) 4 (Folder2)
+                \
+              6 (File2.txt)
+```
+
+### Breakdown of the nodes:
+- **Node 1**: Root directory
+  - **Node 2**: Folder1 (left child of Root)
+    - **Node 3**: File1.txt (left child of Folder1)
+    - **Node 4**: Folder2 (right child of Folder1)
+      - **Node 6**: File2.txt (right child of Folder2)
+  - **Node 5**: File3.txt (right child of Root)
+
+This structure mirrors your original file system but represented as a binary tree.
 
 How Serialization and Deserialization Apply
 
