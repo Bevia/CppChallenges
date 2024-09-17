@@ -12,7 +12,7 @@
     ./bufferoverflow
     ./bufferoverflowhandeling
 
-## Theory
+## Buffer Overflow Theory
 
 A buffer overflow occurs when data exceeds the boundaries of a buffer, allowing it to overwrite adjacent memory. This can lead to undefined behavior, crashes, or security vulnerabilities. Despite improvements in modern C++ and compiler checks, buffer overflows can still occur if not carefully handled.
 
