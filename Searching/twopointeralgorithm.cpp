@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <optional>
+#include <utility> // Required for std::pair
 
 // Function to find the pair with the given sum using two pointers
 std::optional<std::pair<int, int>> findPairWithSum(const std::vector<int>& nums, int target) {
