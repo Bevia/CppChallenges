@@ -37,49 +37,7 @@ Let’s walk through an example where you want to find two numbers in a sorted a
 	•	If current_sum < target, move the left pointer to the right (to increase the sum).
 	•	If current_sum > target, move the right pointer to the left (to decrease the sum).
 
-Example Code (Python):
-
-def find_pair_with_sum(nums, target):
-    left, right = 0, len(nums) - 1
-    
-    while left < right:
-        current_sum = nums[left] + nums[right]
-        
-        if current_sum == target:
-            return (nums[left], nums[right])  # Found the pair
-        
-        elif current_sum < target:
-            left += 1  # Move left pointer right to increase sum
-        
-        else:
-            right -= 1  # Move right pointer left to decrease sum
-    
-    return None  # No pair found
-
-Execution:
-
-For nums = [1, 2, 4, 7, 11, 15] and target = 15:
-
-	1.	Initialize: left = 0, right = 5 (pointing at 1 and 15).
-	2.	current_sum = 1 + 15 = 16, which is greater than target = 15, so move the right pointer to the left.
-	3.	Now left = 0, right = 4 (pointing at 1 and 11).
-	4.	current_sum = 1 + 11 = 12, which is less than target, so move the left pointer to the right.
-	5.	Now left = 1, right = 4 (pointing at 2 and 11).
-	6.	current_sum = 2 + 11 = 13, still less than target, so move the left pointer to the right.
-	7.	Now left = 2, right = 4 (pointing at 4 and 11).
-	8.	current_sum = 4 + 11 = 15, which equals target. The pair (4, 11) is returned.
-
-Complexity:
-
-	•	Time Complexity: O(n), where n is the number of elements in the array. Each pointer moves at most n times.
-	•	Space Complexity: O(1), since no additional space is used other than the two pointers.
-
-Advantages:
-
-	•	Simplicity and efficiency for problems involving arrays or linked lists.
-	•	It often reduces the time complexity of brute-force solutions (like O(n²)) to O(n).
-
-Summary:
+### Summary
 
 The two-pointer algorithm is versatile and is often used for optimization in problems involving:
 
