@@ -1,3 +1,5 @@
+## Intro to AI
+
 Here are three small, beginner-friendly AI projects that we will be working on to learn the fundamentals of artificial intelligence:
 
 1. Image Classification with Neural Networks
