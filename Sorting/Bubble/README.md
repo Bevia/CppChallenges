@@ -1,4 +1,4 @@
-Explanation
+## Explanation
 
     #include <iostream>: Includes the input-output stream library for console output.
     #include <vector>: Includes the vector library for using std::vector.
