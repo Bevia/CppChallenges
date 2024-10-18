@@ -106,3 +106,23 @@ int main() {
 
     return 0;
 }
+
+/*
+Explanation of Changes:
+
+	1.	Component Interface: The Component abstract class defines two virtual methods: 
+    serialize and print. Any node (whether leaf or composite) must implement these.
+
+	2.	TreeNode as Composite and Leaf: The TreeNode class derives from Component 
+    and provides implementations for the serialize and print methods. The tree node 
+    has two children (left and right), which may be null or other Component objects, 
+    allowing us to treat both leaves and composites uniformly.
+
+	3.	Downcasting: In the serialize method, we downcast from Component back 
+    to TreeNode to access the val property. This is because the Component interface 
+    doesn’t know about specific details like node values.
+    
+	4.	Shared Responsibility: The deserialize function constructs TreeNode objects 
+    from serialized data, treating all components uniformly as Component objects.
+
+*/
