@@ -5,7 +5,7 @@
 #include <memory>
 
 /*
-Lets apply Composite Design Pattern to serialize and deserialize a binary tree.
+Lets apply CDP or Composite Design Pattern to serialize and deserialize a binary tree.
 
 To apply the Composite Design Pattern to this code, we need to recognize that t
 his pattern is used to represent part-whole hierarchies. 
@@ -121,7 +121,7 @@ Explanation of Changes:
 	3.	Downcasting: In the serialize method, we downcast from Component back 
     to TreeNode to access the val property. This is because the Component interface 
     doesn’t know about specific details like node values.
-    
+
 	4.	Shared Responsibility: The deserialize function constructs TreeNode objects 
     from serialized data, treating all components uniformly as Component objects.
 
