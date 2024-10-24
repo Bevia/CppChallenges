@@ -14,6 +14,7 @@ Modern C++ Lambda
 
 
 ### Summary:
+Try to follow in this order to understand progression:
 
 1. 	Naive Recursive: Simple but inefficient due to redundant calculations.
 2.	Memoization: Stores previously calculated results, improving efficiency to O(n).
