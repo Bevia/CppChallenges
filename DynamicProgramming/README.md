@@ -15,8 +15,8 @@ Modern C++ Lambda
 
 ### Summary:
 
-	•	Naive Recursive: Simple but inefficient due to redundant calculations.
-	•	Memoization: Stores previously calculated results, improving efficiency to O(n).
-	•	Iterative: Space-optimized version with O(1) space complexity.
-	•	Modern C++ Lambda: Compact, elegant solution leveraging lambdas and memoization.
+1. 	Naive Recursive: Simple but inefficient due to redundant calculations.
+2.	Memoization: Stores previously calculated results, improving efficiency to O(n).
+3.	Iterative: Space-optimized version with O(1) space complexity.
+4.	Modern C++ Lambda: Compact, elegant solution leveraging lambdas and memoization.
 
