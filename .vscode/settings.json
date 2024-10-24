@@ -53,6 +53,9 @@
         "deque": "cpp",
         "fstream": "cpp",
         "iomanip": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "memory": "cpp",
+        "print": "cpp",
+        "unordered_set": "cpp"
     }
 }
