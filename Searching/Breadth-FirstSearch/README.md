@@ -25,7 +25,7 @@ Visited 4
 Visited 5
 
 ## BFS Traversal
-![BFS Traversal](./Searching/Breadth-FirstSearch/bfs_traversal.png)
+![BFS Traversal](./bfs_traversal.png)
 
 ### Usage / Practical cases
 
