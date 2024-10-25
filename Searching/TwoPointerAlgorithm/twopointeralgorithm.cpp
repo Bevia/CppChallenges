@@ -34,7 +34,7 @@ std::optional<std::pair<int, int>> findPairWithSum(const std::vector<int>& nums,
 int main() {
     // Example input
     std::vector<int> nums = {1, 2, 4, 7, 11, 15};
-    int target = 15;
+    int target = 13;
 
     // Find the pair
     auto result = findPairWithSum(nums, target);
