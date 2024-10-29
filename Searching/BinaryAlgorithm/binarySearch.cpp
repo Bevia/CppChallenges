@@ -31,13 +31,6 @@ int main() {
 
     int target = 7;
 
-    // Using the standard library's binary_search function
-    if (std::binary_search(arr.begin(), arr.end(), target)) {
-        std::cout << "Target found using std::binary_search.\n";
-    } else {
-        std::cout << "Target not found using std::binary_search.\n";
-    }
-
     // Using the manually implemented binary search
     if (binarySearch(arr, target)) {
         std::cout << "Target found using manual binary search.\n";
