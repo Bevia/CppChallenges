@@ -1,6 +1,7 @@
 #include <iostream>
 
 int fibonacci(int n) {
+     // Base cases
     if (n <= 1) {
         return n;
     }
