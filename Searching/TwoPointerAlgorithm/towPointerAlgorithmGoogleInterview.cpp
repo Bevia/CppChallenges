@@ -36,6 +36,7 @@ int main() {
     int target = 13;
 
     std::pair<int, int> result = findPairWithSum(nums, target);
+    
     if (result != std::pair<int, int>{}) {  // Check if the result is not empty
         std::cout << "Pair with sum " << target << " found: " 
         << result.first << " and " << result.second << std::endl;
