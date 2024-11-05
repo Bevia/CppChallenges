@@ -10,13 +10,13 @@ python3 ./Searching/Breadth-FirstSearch/bfc_plot.py
 
 ## Explanation:
 
-	1.	Graph Representation: We use an adjacency list (adjList) to represent the graph. 
+1.	Graph Representation: We use an adjacency list (adjList) to represent the graph. 
     The Graph class manages the graph structure.
-	2.	BFS Method: We implement BFS using a queue (std::queue) to keep track of 
+2.	BFS Method: We implement BFS using a queue (std::queue) to keep track of 
     the current node being processed, and a set (std::unordered_set) to track visited nodes.
-	3.	Edge Addition: The addEdge function adds edges to the graph. In this case, it’s undirected, 
+3.	Edge Addition: The addEdge function adds edges to the graph. In this case, it’s undirected, 
     so for every edge from u to v, we also add an edge from v to u.
-	4.	Main Function: The BFS starts from vertex 0, but this can be changed to any other vertex. 
+4.	Main Function: The BFS starts from vertex 0, but this can be changed to any other vertex. 
     It prints each visited node during the traversal.
 
 Breadth-First Search starting from vertex 0:
