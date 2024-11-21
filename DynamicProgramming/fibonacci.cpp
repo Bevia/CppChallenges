@@ -5,7 +5,8 @@ class Fibonacci {
 public:
     int getFibonacci(int n) {
         // Check if we already computed this value
-        if (memo.find(n) != memo.end()) return memo[n];
+        if (memo.find(n) != memo.end()) 
+        return memo[n];
         
         // Base cases
         if (n <= 1) return n;
