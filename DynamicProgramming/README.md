@@ -2,8 +2,10 @@
     g++ ./DynamicProgramming/fibonacci.cpp ./DynamicProgramming/fibonacci.cpp -o fibonacci 
 ### To enable C++11, use the following command:
     g++ -std=c++11 ./DynamicProgramming/fibonacci.cpp -o ./DynamicProgramming/fibonacci.cpp -o fibonacci 
+    g++ -std=c++11 ./DynamicProgramming/lcs.cpp -o ./DynamicProgramming/lcs.cpp -o lcs 
 #### To run the program, use this command:
     ./fibonacci
+    ./lcs
 
 ### Theory
 how to implement the Fibonacci sequence in modern C++ using different methods: 
