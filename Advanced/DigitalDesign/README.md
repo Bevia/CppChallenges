@@ -43,5 +43,3 @@ Applications
 	•	Circuit design and VLSI layout optimization.
 	•	Social network analysis and clustering.
 	•	Load balancing in parallel computing.
-
-Let me know if you’d like an example or further explanation!
