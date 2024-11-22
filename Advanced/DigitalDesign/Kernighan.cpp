@@ -3,6 +3,7 @@
 #include <cstdint>
 
 // Function to count set bits using std::bitset
+// time complexity is O(log n)
 int countSetBits(uint32_t n) {
     return std::bitset<32>(n).count();
 }

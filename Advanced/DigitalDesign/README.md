@@ -1,8 +1,10 @@
 ## Kernighan’s Algorithm
 
-Kernighan’s Algorithm refers to Kernighan-Lin Algorithm, a heuristic for solving the graph partitioning problem. It is widely used in applications like VLSI design, network partitioning, and clustering. The algorithm was developed by Brian W. Kernighan and Shen Lin in 1970.
+Kernighan’s Algorithm refers to Kernighan-Lin Algorithm, a heuristic for solving the graph partitioning problem. 
+It is widely used in applications like VLSI design, network partitioning, and clustering. 
+The algorithm was developed by Brian W. Kernighan and Shen Lin in 1970.
 
-Problem Statement
+### Problem Statement
 
 The goal of the algorithm is to partition the nodes of a graph into two subsets such that the cut size (the total weight of the edges connecting nodes in different subsets) is minimized. For unweighted graphs, this simply refers to minimizing the number of edges between the two subsets.
 
