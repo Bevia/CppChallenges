@@ -6,7 +6,7 @@
     ./bfs
 
 ### run the python file to generarte the plot
-python3 ./Searching/Breadth-FirstSearch/bfc_plot.py
+python3 ./Searching/Breadth-FirstSearch/bfs_plot.py
 
 ## Explanation:
 
