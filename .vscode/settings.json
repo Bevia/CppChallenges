@@ -58,5 +58,7 @@
         "print": "cpp",
         "unordered_set": "cpp",
         "utility": "cpp"
-    }
+    },
+    "DockerRun.DisableDockerrc": true,
+    "DockerRun.DisableAutoGenerateConfig": true
 }

@@ -1,34 +1,31 @@
-
 #include <vector>
 #include <utility> // for std::pair
 #include <iostream>
 #include <algorithm> // for std::sort
-
-/*
-Using std::optional<std::pair<int, int>> is a good choice if you want to return 
-only one pair that satisfies the target sum or indicate that no such pair exists. 
-However, std::optional is not suitable if you want to return multiple pairs.
-*/
 
 std::vector<std::pair<int, int>> findMorePairs(const std::vector<int>& arr, int target) {
     std::vector<std::pair<int, int>> result;
     int left = 0;
     int right = arr.size() - 1;
 
+    // Ensure the array is sorted (if not already sorted)
+    std::vector<int> sortedArr = arr;
+    std::sort(sortedArr.begin(), sortedArr.end());
+
     while (left < right) {
-        int currentSum = arr[left] + arr[right];
+        int currentSum = sortedArr[left] + sortedArr[right];
         if (currentSum == target) {
-            result.emplace_back(arr[left], arr[right]);
+            result.emplace_back(sortedArr[left], sortedArr[right]);
             ++left;
             --right;
 
             // Skip duplicate values for `left`
-            while (left < right && arr[left] == arr[left - 1]) {
+            while (left < right && sortedArr[left] == sortedArr[left - 1]) {
                 ++left;
             }
 
             // Skip duplicate values for `right`
-            while (left < right && arr[right] == arr[right + 1]) {
+            while (left < right && sortedArr[right] == sortedArr[right + 1]) {
                 --right;
             }
         } else if (currentSum < target) {
