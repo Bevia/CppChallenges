@@ -1,3 +1,7 @@
+
+#include <iostream>
+#include <vector>
+// from book: Data Structures and Algorithm Analysis by Clifford A. Shaffer
 // Return the position of an element in sorted array "A" of
 // size "n" with value "K". If "K" is not in "A", return
 // the value "n".
@@ -11,4 +15,20 @@ if (K == A[i]) return i; // Found it
 if (K > A[i]) l = i; // In right half
 }
 return n; // Search value not in A
+}
+
+int main() {
+    int A[] = {1, 3, 5, 7, 9};
+    int n = sizeof(A) / sizeof(A[0]);
+    int K = 7;
+
+    int result = binary(A, n, K);
+
+    if (result != n) {
+        std::cout << "Element " << K << " found at index " << result << std::endl;
+    } else {
+        std::cout << "Element " << K << " not found in the array." << std::endl;
+    }
+
+    return 0;
 }

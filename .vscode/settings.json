@@ -57,7 +57,8 @@
         "memory": "cpp",
         "print": "cpp",
         "unordered_set": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "forward_list": "cpp"
     },
     "DockerRun.DisableDockerrc": true,
     "DockerRun.DisableAutoGenerateConfig": true
