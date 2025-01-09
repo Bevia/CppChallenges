@@ -21,7 +21,7 @@ int main() {
     int A[] = {1, 3, 5, 7, 9};
     //Dividing the total size of the array (sizeof(A)) by the size of a 
     //single element (sizeof(A[0])) gives the total number of elements in the array.
-    //For A, there are 5 elements, and if each int is 4 bytes, the total size is 5 * 4 = 20 bytes.
+    //For sizeof(A), there are 5 elements, and if each int is 4 bytes, the total size is 5 * 4 = 20 bytes.
     int n = sizeof(A) / sizeof(A[0]);
     int K = 7;
 
