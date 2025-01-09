@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include <vector>
-// from book: Data Structures and Algorithm Analysis by Clifford A. Shaffer
+// from book: Data Structures and Algorithm Analysis by Clifford A. Shaffer, pg. 75
 // Return the position of an element in sorted array "A" of
 // size "n" with value "K". If "K" is not in "A", return
 // the value "n".
