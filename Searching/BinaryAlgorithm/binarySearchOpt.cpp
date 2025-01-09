@@ -18,7 +18,7 @@ return n; // Search value not in A
 }
 
 int main() {
-    int A[] = {1, 3, 5, 7, 9};
+    int A[] = {1, 2, 3, 5, 6, 7, 9};
     int n = sizeof(A) / sizeof(A[0]);
     int K = 7;
 
