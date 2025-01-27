@@ -2,8 +2,10 @@
 g++ ./Backtracking/n_queens_problem.cpp ./Backtracking/n_queens_problem.cpp -o n_queens_problem 
 ### To enable C++11, use the following command:
 g++ -std=c++11 ./Backtracking/n_queens_problem.cpp -o ./Backtracking/n_queens_problem.cpp -o n_queens_problem 
+g++ -std=c++11 ./Backtracking/permutations.cpp -o ./Backtracking/permutations.cpp -o permutations 
 ### To run the program, use this command:
 ./n_queens_problem
+./permutations
 
 ## Theory
 
