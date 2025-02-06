@@ -23,7 +23,7 @@ void test() {
     Solution solution;
     
     // Example test case
-    vector<int> nums = {1, 1, 1, 2, 2, 3}; // Input array
+    vector<int> nums = {1, 1, 1, 2, 2, 2, 2, 2, 3}; // Input array
     vector<int> expectedNums = {1, 1, 2, 2, 3}; // Expected output
 
     int k = solution.removeDuplicates(nums); // Call function
@@ -35,6 +35,7 @@ void test() {
     // Verify elements match
     for (int i = 0; i < k; i++) {
         assert(nums[i] == expectedNums[i]);
+         cout << "here is the output " << nums[i] << endl;
     }
 
     cout << "Test passed successfully!" << endl;
