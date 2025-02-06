@@ -4,11 +4,11 @@
 
 void rotate(std::vector<int>& nums, int k) {
     int n = nums.size();
-    k = k % n; // Handle cases where k > n
+    k = k % n; 
 
-    std::reverse(nums.begin(), nums.end());       // Reverse the entire array
-    std::reverse(nums.begin(), nums.begin() + k); // Reverse the first k elements
-    std::reverse(nums.begin() + k, nums.end());   // Reverse the remaining elements
+    std::reverse(nums.begin(), nums.end());      
+    std::reverse(nums.begin(), nums.begin() + k); 
+    std::reverse(nums.begin() + k, nums.end());   
 }
 
 int main() {
