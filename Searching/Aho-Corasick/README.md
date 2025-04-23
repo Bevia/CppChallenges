@@ -22,3 +22,31 @@ For the text "ushers" and the keywords ["he", "she", "his", "hers"], the output 
 Found 'she' at index 2
 Found 'he' at index 3
 Found 'hers' at index 1
+
+## Applications
+The Aho-Corasick algorithm falls under the category of string searching algorithms. 
+Specifically, it is a pattern matching algorithm designed for multi-pattern searching 
+within a single pass through the text. Here's how it fits into broader categories:
+
+### Algorithm Design Paradigm:
+
+It is primarily considered a finite-state automaton-based algorithm, 
+as it uses a trie structure and incorporates failure links to transition efficiently between states.
+
+### Applications:
+
+This algorithm is widely used in:
+Text processing (e.g., keyword searches).
+Bioinformatics (e.g., searching DNA sequences).
+Network security (e.g., detecting malware signatures).
+Natural language processing (e.g., matching words in large corpora).
+
+### Complexity:
+
+It exhibits linear time complexity, which is O(n + m + k), where: 
+𝑛: Length of the text.
+𝑚: Total length of all keywords.
+𝑘: Number of occurrences found.
+
+This efficiency makes it stand out compared to other searching algorithms, 
+particularly in scenarios with multiple patterns
