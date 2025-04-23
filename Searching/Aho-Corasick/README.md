@@ -36,10 +36,10 @@ as it uses a trie structure and incorporates failure links to transition efficie
 ### Applications:
 
 This algorithm is widely used in:
-Text processing (e.g., keyword searches).
-Bioinformatics (e.g., searching DNA sequences).
-Network security (e.g., detecting malware signatures).
-Natural language processing (e.g., matching words in large corpora).
+	1. Text processing (e.g., keyword searches).
+	2. Bioinformatics (e.g., searching DNA sequences).
+	3. Network security (e.g., detecting malware signatures).
+	4. Natural language processing (e.g., matching words in large corpora).
 
 ### Complexity:
 
@@ -49,4 +49,4 @@ It exhibits linear time complexity, which is O(n + m + k), where:
 𝑘: Number of occurrences found.
 
 This efficiency makes it stand out compared to other searching algorithms, 
-particularly in scenarios with multiple patterns
+particularly in scenarios with multiple patterns.
