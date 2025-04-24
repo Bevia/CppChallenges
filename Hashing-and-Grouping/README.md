@@ -44,3 +44,24 @@ Track the maximum group size (maxSize) as you populate the map.
 Count Groups with Maximum Size:
 Iterate through the hash map to count groups that match maxSize.
 This solution is efficient and adheres to the problem's constraints.
+
+## Intuition
+The problem requires grouping numbers from 1 to n based on their digit sums. The intuition is that numbers with the same digit sum can be grouped together. By iterating through the numbers, calculating their digit sums, and maintaining a record of group sizes, you can find the largest group size and count how many groups achieve it.
+
+## Approach
+Group Numbers by Digit Sum:
+For each number from 1 to n, calculate the sum of its digits.
+Use a hash map (or dictionary) to store the count of numbers that share the same digit sum.
+Track Maximum Group Size:
+While populating the hash map, keep updating a variable to store the size of the largest group.
+Count Groups with Maximum Size:
+Iterate through the hash map to count how many groups have the maximum size.
+
+## Complexity
+### Time Complexity:
+
+The digit sum calculation for each number takes $$O(\log(\text{n}))$$ time (since the number of digits in n is proportional to $$\log(\text{n})$$). Iterating through all n numbers takes $$O(n)$$. Thus, the overall time complexity is $$O(n \cdot \log(\text{n}))$$.
+
+### Space Complexity:
+
+The hash map may store up to n entries in the worst case, giving a space complexity of $$O(n)$$.
