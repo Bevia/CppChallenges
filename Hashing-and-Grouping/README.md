@@ -52,9 +52,9 @@ The problem requires grouping numbers from 1 to n based on their digit sums. The
 Group Numbers by Digit Sum:
 For each number from 1 to n, calculate the sum of its digits.
 Use a hash map (or dictionary) to store the count of numbers that share the same digit sum.
-Track Maximum Group Size:
+### Track Maximum Group Size:
 While populating the hash map, keep updating a variable to store the size of the largest group.
-Count Groups with Maximum Size:
+### Count Groups with Maximum Size:
 Iterate through the hash map to count how many groups have the maximum size.
 
 ## Complexity
