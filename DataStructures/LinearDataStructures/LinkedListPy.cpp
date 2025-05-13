@@ -69,6 +69,9 @@ public:
         std::cout << "None" << std::endl;
     }
 
+    //This is our destructor for the LinkedList class. 
+    //It ensures that all dynamically allocated Node objects are 
+    //properly deleted when a LinkedList object is destroyed.
     ~LinkedList() {
         Node* current = head;
         while (current) {
