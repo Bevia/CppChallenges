@@ -5,6 +5,8 @@ public:
     std::string data;
     Node* next;
 
+    //This line of code is the constructor for the Node class
+    //this next(nullptr) is equivalent to self.next = None in python
     Node(std::string value) : data(value), next(nullptr) {}
 };
 
