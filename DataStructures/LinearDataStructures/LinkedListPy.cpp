@@ -32,7 +32,7 @@ public:
     }
 
     void insert_back(std::string value) {
-        Node* node = new Node(value);
+        Node* node = new Node(value);  // Dynamically allocates a new Node object with the given value.
         if (!head) {
             head = node;
             return;
