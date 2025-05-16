@@ -1,5 +1,11 @@
 #include <iostream>
-
+/*
+Node* first = new Node("A");
+This creates a new Node with "A" inside.
+first is a pointer to a Node object, holds the memory address of that node.
+data is a member of that Node object, storing a string (e.g., "A").
+-> is the arrow operator, used to access members of an object through a pointer.
+*/
 class Node {
 public:
     std::string data;
@@ -15,6 +21,8 @@ private:
     Node* head;
 
 public:
+
+    // Constructor to initialize an empty list
     LinkedList() : head(nullptr) {}
 
     void insert_front(std::string value) {
