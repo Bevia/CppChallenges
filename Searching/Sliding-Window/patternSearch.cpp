@@ -62,33 +62,5 @@ int main() {
         std::cout << "Pattern '" << k1 << "' not found in the array." << std::endl;
     }
 
-    std::cout << "\n----------------------------------------\n" << std::endl;
-
-    std::string array2 = "abbababbaabbabbaa";
-    std::string k2 = "bbabb";
-
-    std::cout << "Array: " << array2 << std::endl;
-    std::cout << "Pattern: " << k2 << std::endl;
-
-    // Find the matches
-    std::vector<int> matching_indices2 = findSlidingWindowMatches(array2, k2);
-
-    if (!matching_indices2.empty()) {
-        std::cout << "Pattern '" << k2 << "' found at starting indices: [";
-        for (size_t i = 0; i < matching_indices2.size(); ++i) {
-            std::cout << matching_indices2[i];
-            if (i < matching_indices2.size() - 1) {
-                std::cout << ", ";
-            }
-        }
-        std::cout << "]" << std::endl;
-
-        for (int index : matching_indices2) {
-            std::cout << "  Match found at index " << index << ": '" << array2.substr(index, k2.length()) << "'" << std::endl;
-        }
-    } else {
-        std::cout << "Pattern '" << k2 << "' not found in the array." << std::endl;
-    }
-
     return 0; // Indicate successful execution
 }
